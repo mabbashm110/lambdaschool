@@ -1,0 +1,75 @@
+/* CSS Tricky notes
+- ID's heavier than classes, classes heavier than elements. Weighted, lower in the css class becomes heavier.
+
+- Multiple classes, inherits based on specificity adding css below / Lower on the page
+
+- Mark borders/background-color to see what you are setting, if you cannot see HTML
+
+- CSS is cascading, top to bottom
+
+- Override child properties by specifying additional items
+
+- Google's best practice, use css properties in alphabetical order.
+*/
+
+/* Inhertiance from Parent */
+.parent{
+    color: red;
+  }
+  .child{
+    color: blue;
+  }
+  
+  /* Or we use the nth-child property */
+  /* Colors child Jim to yellow */
+  /* div:nth-child(2){
+    color: yellow;
+  }
+  
+  /* Colors child2 Susan to Gray
+  div:nth-child(3){
+    color: gray;
+  }
+  
+  TRY THIS -- Colors children of child - Specificity by nth-child George and Nancy
+  
+  div:nth-child(3) div:nth-child(n){
+    color: yellow;
+  }
+  */
+  
+  /* Specificity example */
+  .child .grandchild{
+    color: green;
+  }
+  
+  .grandchild .greatgrandchild{
+    color: pink;
+  }
+  
+  .grandchild .greatgrandchild2{
+    color: purple;
+  }
+  
+  /* Parent inheritance with child 2 */
+  .child2{
+    color: coral;
+  }
+  
+  .child2 .grandchild{
+    color: aqua;
+  }
+  
+  .child2 .greatgrandchild{
+    color: rosybrown;
+  }
+  
+  /* Inheritance with child 2, since matching child 1 */
+  .child2 .grandchild2{
+    color: sienna;
+  }
+  
+  .grandchild2 .greatgrandchild{
+    color: tomato;
+  }
+  
