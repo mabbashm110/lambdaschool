@@ -1,0 +1,45 @@
+<!-- 
+    NOTES:
+    1. Specificity read more in terms of weight - UI 1 https://css-tricks.com/specifics-on-css-specificity/
+    2. CSS is cascading! top to bottom.
+    3. Inline style overrides CSS eg: <div style=
+    4. !important overrides everything in CSS for that style
+    5. CSS Reset
+
+
+    Display types
+    1. Span same line
+    2. p new line
+    3. block will take the entire width eg
+    4. Learn display property css to understand.. 
+    5. display: none; will make it totally invisible on the screen, does not take space on screen
+    6. visibility: hidden; will make it hidden but take space on screen
+    7. display: inline - makes it inline without line breaks.
+    8. display: inline-block - divs next to each other.
+    9. box-sizing: border-box; will be set to width and height, shrinks content
+    10. margin, padding, border - have 4 properties (top right bottom left) clockwise in order mentioned - TRBL, if 2, (topbottom, leftright)
+    11. CSS box model - https://www.w3schools.com/css/css_boxmodel.asp
+    12. Automatic css center horizontally margin: 20px auto; NOTE: No top and bottom auto, because it is a block and browser does not have a concept. Also auto wont work on divs in inline-block;
+    13. For inline-block auto will not work! even if it is a single div
+    14. For 12/13 use flex box!
+    15. Make a border a circle -eg: border-radius: 50px; or border-radius: 50%;
+    16. Four positions in css.  with the position property - position: static; then use top left bottom right in conjunction.
+        Static: every element is default to static, until we change position property!
+        Relative: element should be static, but gives us cool things to use: use top, left, bottom, right properties: eg: top: 100px, moves 100px away from the edge of the screen/html body 
+            or item that is relative in case of a child element;
+        Fixed: Position is fixed to display window, even if you have another paragraph so long, it will stay fixed on screen display, even if it is a child element.
+        Absolute: relative is one step up (positioning wise), absolute is up the ancestral chain, relative to top most
+    17. Z-index: is like the layers on page - if you have a multiple divs on the page you can put it as top and bottom, like layers in Fireworks and Photoshop. Remember the elements have to 
+        be on the same level. You can put the child behind the parent if the posiiton is absolute or fixed. So ideally top to bottom. To make it completely bottom use z-index: -1; 
+        One other note: Index is assigned based on the order, so first div will be 1, second below it will be 2.
+    
+
+ -->
+
+<!-- SHORTCUTS -->
+ <!-- div.child + tab makes it like below -->
+ <div class="child"></div>
+
+ <!-- use div and tab makes it like below -->
+<div></div>
+

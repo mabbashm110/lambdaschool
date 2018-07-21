@@ -1,0 +1,33 @@
+/* CSS Notes
+Box Model
+- Padding is inside the box
+
+- Everything is a box model 
+Margin -> Border -> Padding -> Width/Height
+
+- You would calculate the width/height with the padding so if the padding was 20px across the board 
+and width was 400, height was 200, the actual width + (left/right padding) and 
+height + (top/bottom padding) would be 440 x 240 px
+
+NOTE: Box sizing can overcome this.
+eg: box-sizing: border-box. Ideal to put this in parent css like this, to set this 
+across all pages
+* {
+    box-sizing: border-box;
+}
+- Documentation: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+NOTE 2: box-sizing border box impacts the inside (border, padding, height/width), not the margin
+
+NOTE 3 IMPORTANT: Without box-sizing border-box, the padding increases the size of the box 400 width
++ 20px x 2 (left and right) padding, it becomes 440px. With it, it adjusts width to 400px only 
+which is the size you specify in the css and moves inwards, so padding is constrained inside 
+the border.
+
+- Use margin if you want (a padding to the actual box)
+
+- With padding the text inside the box will automatically wrap contents.
+
+- Use google chrome inspector to change settings temporarily and view upon hovering the box
+
+*/

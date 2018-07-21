@@ -1,0 +1,104 @@
+/* EVERYTHING ABOVE IS A CSS RESET */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Actor';
+    border: 2px solid lightgray;
+}
+
+.main {
+    color: gray;
+    /* margin: auto; */
+    
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+}
+
+nav a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    /* border-radius: 10%; */
+    text-justify: auto;
+}
+
+nav a:hover{
+    background-color: darkgoldenrod;
+    /* border: 2px solid red; */
+    color: white;
+}
+
+.header p{
+    text-align: center;
+}
+
+.header p img{
+    border-radius: 3%;
+    padding: 10px;
+    background-color: orange;
+    height: 300px;
+    width: 700px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+h3 {
+    color: green;
+    text-align: left;
+}
+
+p{
+    align: center;
+}
+
+.main-summary {
+    border: 2px solid black;
+    margin: auto;
+    width: 700px;
+    max-width: 50%;
+}
+
+.main-summary p{
+    text-align: justify;
+}
+
+.article {
+    float: left;
+    width: 32%;
+    padding: 25px;
+    border: 1px dashed lightgray;
+    background-color: #eeeeee;
+    margin: 5px;
+}
+
+.article img {
+    max-height: 100%;
+    max-width: 100%;
+    float: left;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.article p{
+    text-align: justify;
+    float: none;
+}
+
+.backgroundImg{
+    background-image: url("https://tk-assets.lambdaschool.com/bcf76f62-2431-4c22-b466-2e711f3da2b9_ui-i-bakery-main-header.png")
+}
