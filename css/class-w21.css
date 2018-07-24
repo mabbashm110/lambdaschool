@@ -1,0 +1,44 @@
+.parent{
+    background: gray;
+    display: flex;
+    height: 100%;
+}
+
+/* Anything above is crap*/
+.nav{
+    display: flex;
+    background: red;
+    height: 40px;
+    width: 100%;
+}
+
+.middle{
+    display: flex;
+    flex-basis: auto;
+}
+
+
+.left{
+/*    width: 200px;*/
+    max-width: 40%;
+    height: 100%;
+    background-color: azure;
+}
+
+.center{
+    background-color: aqua;
+}
+
+.right{
+/*    width: 100px;*/
+    width: 20%;
+    max-width: 40%;
+    height: 100%;
+    background-color: maroon;
+}
+
+.bottom{
+    background: blue;
+    height: 10%;
+    width: 100%;
+}
