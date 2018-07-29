@@ -65,67 +65,171 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+h1 {
+    font-size: 72px;
+    text-align: center;
+}
 
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 20px;
+}
 .container{
-    background: lightgray;
+    /* background: lightgray; */
     display: flex;
     flex-direction: column;
 }
 
 .header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    background: red;
+    /* background: red; */
 }
 
 .nav{
     display: flex;
-    background-color: green;
-    
+    /* background-color: green; */
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
 }
 
 .nav li a{
     display: flex;
-    padding: 5px;
-    align-content: center;
+    padding: 8px 20px;
+    margin-left: 5px;
+    /* text-decoration: none; */
+    color: black;
+    /* border: 1px thin gray; */
 }
 
+a:hover{
+    background-color: gray;
+    text-decoration-color: greenyellow;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:20px;
+    width: 30%;
+}
 .hero{
     display: flex;
-    background: purple;
+    /* background: purple; */
+    justify-content: space-between;
     align-items: center;
-    height: 400px;
+    height: 550px;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 25px;
 }
 
 .left{
     display: flex;
-    justify-content: center;
-    background: aqua;
+    flex-direction: column;
+    align-items: center;
+    /* background: aqua; */
     flex-grow: 5;
     order: 1;
 }
 
+.button{
+    border: 1px solid black;
+    padding: 15px;
+}
+
 .right{
     display: flex;
-    background: yellow;
+    /* background: yellow; */
     justify-content: center;
     order: 2;
     flex-grow: 1;
 }
 
 .twolayout{
-    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: white; */
+    height: 110px;
+}
+
+.twolayout .service{
+    /* display: flex; */
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
 }
 
 .midimg{
-    background: black;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: center;
+    /* background: black; */
+    margin: 25px;
+    height: 250px;
+}
+
+.midimg img{
+    width: 100%;
+    height: 100%;
 }
 
 .threelayout{
-    background: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px;
+    height: 120px;
+    /* background: yellow; */
 }
 
+.service{
+    margin-right: 25px;
+    text-align: justify;
+}
 .contact{
-    background: maroon;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background: maroon;*/
+}
+
+.contact *{
+    margin-left: 25px;
+}
+
+.address{
+    margin: 0;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+.service-feature{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-right: 0px;
+    padding: 20px;
+    border: 1px solid black;
 }
 
