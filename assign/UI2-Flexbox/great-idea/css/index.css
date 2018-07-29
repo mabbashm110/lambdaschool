@@ -115,8 +115,10 @@ a:hover{
 .logo{
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
     margin-right:20px;
     width: 30%;
+    height: 40px;
 }
 .hero{
     display: flex;
@@ -140,6 +142,47 @@ hr{
     order: 1;
 }
 
+.left *{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-self: flex-start;
+    /* background: blue; */
+    flex-grow: 2;
+    margin-left: 10px;
+    /* margin-right: 35px; */
+    /* text-align: justify; */
+    /* width: 50ch; */
+    /* order: 1; */
+}
+
+/* .left div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+} */
+
+/* ul{
+    list-style-type: square;
+} */
+
+.twoServices * li{
+    margin: 20px;
+    padding-left: 5px; 
+    list-style-type: square;
+}
+
+/* .right *{
+    display: flex;
+    align-self: flex-start;
+    background: red;
+    max-width: 20%;
+    margin-right: 35px;
+    flex-grow: 1;
+    order: 2;
+} */
+
 .button{
     border: 1px solid black;
     padding: 15px;
@@ -153,17 +196,58 @@ hr{
     flex-grow: 1;
 }
 
+/* .right div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    flex-grow: unset;
+} */
+
 .twolayout{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background: white; */
+    /* background: gray; */
     height: 110px;
 }
 
-.twolayout .service{
-    /* display: flex; */
+/* .twolayout:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 110px;
+    background: red;
+} */
+
+.twoServices{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    /* padding-bottom: 15px; */
+    /* border-bottom: 1px solid black; */
+}
+
+.service-feature{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding: 15px;
+    width: 47%;
+    /* height: 175px; */
+    background:#eeeeee;
+    border: 1px solid gray; 
+    margin: 10px;
+}
+
+.no-border{
+    border: none;
+    background:none;
 }
 
 .feature{
@@ -187,6 +271,20 @@ hr{
 .midimg img{
     width: 100%;
     height: 100%;
+}
+
+.excerpt{
+    margin: 25px;
+}
+
+.learn-more{ 
+    width: 30%;
+    border: 1px dashed black;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background: white;
 }
 
 .threelayout{
@@ -224,12 +322,5 @@ hr{
     height: 35px;
 }
 
-.service-feature{
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
-    margin-right: 0px;
-    padding: 20px;
-    border: 1px solid black;
-}
+
 
