@@ -1,3 +1,5 @@
+// http://www.codewars.com/r/tvuXLg
+
 function Fruit(type, geoArea) {
     //this = {}
     this.type = type;
